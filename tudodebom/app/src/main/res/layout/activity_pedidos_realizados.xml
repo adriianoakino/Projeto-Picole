@@ -4,21 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.company.tudodebom.tudodebom.PicoleActivity">
+    tools:context="com.company.tudodebom.tudodebom.PedidosRealizados">
 
-    <include
-        android:id="@+id/toolbar_picole"
-        layout="@layout/toolbar_picole"
-        />
+    <include android:id="@+id/toolbarPedidosRealizados"
+        layout="@layout/toolbar_pedidos_realizados" />
 
     <ListView
-        android:id="@+id/listPicole"
+        android:id="@+id/listPedidosRealizados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_below="@id/toolbar_picole"
-        android:background="@color/colorWhite"
-        />
-
+        android:layout_below="@id/toolbarPedidosRealizados"
+        android:background="@color/colorWhite" />
 
 </RelativeLayout>

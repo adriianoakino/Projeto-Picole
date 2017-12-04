@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    tools:context="com.company.tudodebom.tudodebom.FinalizarPedido">
+
+    <include android:id="@+id/include"
+        layout="@layout/toolbar_finalizar_compra">
+
+    </include>
+
+    <ListView
+        android:id="@+id/listaFinalizarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/totalFCompra"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:background="@color/colorWhite"
+        android:choiceMode="multipleChoiceModal"
+        android:listSelector="@drawable/listview_change_color" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="26dp"
+        android:text="Total Compra R$"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/totalFCompra"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etFCTroco"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/spinner"
+        android:layout_toStartOf="@+id/spinner"
+        android:text="Forma de pagamento"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editbox"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="16dp"
+        android:text="troco R$: "
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/etFCTroco"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:enabled="false"
+        android:text="0.00"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:id="@+id/editbox"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorMild"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/btnFCConfirma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            android:text="Confirmar"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/etFCTroco"
+        android:layout_alignStart="@+id/etFCTroco" />
+
+</RelativeLayout>

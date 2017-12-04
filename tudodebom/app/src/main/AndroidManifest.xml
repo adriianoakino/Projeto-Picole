@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,7 +21,14 @@
         <activity android:name=".RegisterAccount" />
         <activity android:name=".PicoleActivity" />
         <activity android:name=".ClientePedidoActivity" />
-        <activity android:name=".QuantidadePicoleActivity"></activity>
+        <activity android:name=".QuantidadePicoleActivity" />
+        <activity android:name=".menu_opcoes_cliente" />
+        <activity android:name=".FinalizarPedido" />
+        <activity android:name=".PedidosRealizados" />
+        <activity
+            android:name=".ItemPedidosRealizados"
+            android:label="@string/title_activity_item_pedidos_realizados"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

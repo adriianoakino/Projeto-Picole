@@ -1,78 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:orientation="vertical"
     android:padding="35dp"
     tools:context="com.company.tudodebom.tudodebom.LoginActivity">
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/emailField" />
 
     <EditText
         android:id="@+id/emailField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorMild"
         android:hint="E-mail"
+        android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="12dp"
-        android:background="@drawable/bottom_border"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="5dp"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/passwordField"
-        android:textColor="@color/colorWhite"
         android:text="adriano@gmail.com"
-         />
-
+        android:textColor="@color/colorWhite" />
 
 
     <EditText
         android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorMild"
         android:hint="Passsword..."
+        android:inputType="textPassword"
         android:maxLines="1"
         android:padding="12dp"
         android:text="akino123"
-        android:background="@drawable/bottom_border"
-
-
-        android:layout_centerHorizontal="true"
-        android:inputType="textPassword"
-        android:layout_above="@+id/btnLogar"
-        android:layout_marginBottom="24dp" />
+        android:textColor="@color/colorWhite" />
 
     <Button
         android:id="@+id/btnLogar"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:background="@color/colorMild"
         android:text="Entrar"
-        android:layout_above="@+id/btnRegistrar"
-        android:layout_centerHorizontal="true"
-        android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/btnRegistrar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Registrar"
-        android:layout_marginBottom="64dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorPrimary"/>
 
+        android:layout_marginBottom="66dp"
+        android:background="@color/colorMild"
+        android:text="Registrar"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnRecoveryPassword"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorMild"
+        android:text="Recuperar Senha"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/btnLogar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 

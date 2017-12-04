@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_account"
+        android:title="Minha Conta"></item>
+
+    <item android:id="@+id/nav_novo_pedido"
+        android:title="Novo Pedido"></item>
+
+    <item android:id="@+id/nav_pedidos_realizados"
+        android:title="Pedidos Realizados"></item>
+
+
+    <item android:id="@+id/nav_promocoes"
+        android:title="Promoções"></item>
+
+    <item android:id="@+id/nav_logout"
+        android:title="Sair"></item>
+
+
+
+
+
+</menu>

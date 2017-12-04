@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">tudo de bom</string>
+    <string name="app_name">tudodibom</string>
+    <string name="delete">Delete</string>
+    <string name="dialog_text">Gostaria Realmente de Cancelar seu pedido ?</string>
+    <string name="dialog_text_login">Gostaria de Enviar o Email de Recuperação de E-mail ?</string>
+    <string name="Ok">Ok</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="title_activity_item_pedidos_realizados">ItemPedidosRealizados</string>
 </resources>

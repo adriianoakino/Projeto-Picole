@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Compra:"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/statusEntrega"
+        android:layout_alignStart="@+id/statusEntrega"
+        android:layout_marginTop="46dp"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/txtPedido"
+        android:layout_width="110dp"
+        android:layout_height="17dp"
+        android:textSize="16dp"
+        android:text="Pedido 1"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <ProgressBar
+        android:id="@+id/statusEntrega"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="228dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:progressTint="@color/colorBlack"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Compra:"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/txtDataCompra"
+        android:layout_alignBottom="@+id/txtDataCompra"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txtPrecoCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 100.00"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignRight="@+id/statusEntrega"
+        android:layout_alignEnd="@+id/statusEntrega" />
+
+    <TextView
+        android:id="@+id/txtDataCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05/04/1994"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/txtPrecoCompra"
+        android:layout_alignRight="@+id/txtPrecoCompra"
+        android:layout_alignEnd="@+id/txtPrecoCompra" />
+
+</RelativeLayout>

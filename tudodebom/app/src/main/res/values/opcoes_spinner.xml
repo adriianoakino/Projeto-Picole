@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="metodopagamento_array">
+        <item>Cartão</item>
+        <item>Dinheiro</item>
+    </string-array>
+
+</resources>

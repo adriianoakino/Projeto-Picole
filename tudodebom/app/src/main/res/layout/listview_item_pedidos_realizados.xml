@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/saborPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Sabor:"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/quantidadePedido"
+        android:layout_alignStart="@+id/quantidadePedido" />
+
+
+    <TextView
+        android:id="@+id/txtSaborPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Chocolate"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/saborPedido"
+        android:layout_alignBottom="@+id/saborPedido"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/quantidadePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Quantidade:"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/saborPedido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:id="@+id/precoItenPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Preço:"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/quantidadePedido"
+        android:layout_alignLeft="@+id/quantidadePedido"
+        android:layout_alignStart="@+id/quantidadePedido" />
+
+    <TextView
+        android:id="@+id/txtPrecoItenAtributoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 100.00"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/precoItenPedido"
+        android:layout_alignBottom="@+id/precoItenPedido"
+        android:layout_alignLeft="@+id/txtQuantidadeItenPedido"
+        android:layout_alignStart="@+id/txtQuantidadeItenPedido" />
+
+    <TextView
+        android:id="@+id/txtQuantidadeItenPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/quantidadePedido"
+        android:layout_alignBottom="@+id/quantidadePedido"
+        android:layout_alignRight="@+id/txtSaborPedido"
+        android:layout_alignEnd="@+id/txtSaborPedido"
+        android:layout_alignLeft="@+id/txtSaborPedido"
+        android:layout_alignStart="@+id/txtSaborPedido" />
+
+</RelativeLayout>
